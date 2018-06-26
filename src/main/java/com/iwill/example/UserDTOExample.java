@@ -1,4 +1,4 @@
-package com.iwill.model;
+package com.iwill.example;
 
 import java.util.ArrayList;
 import java.util.List;

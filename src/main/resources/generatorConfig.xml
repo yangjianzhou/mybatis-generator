@@ -22,8 +22,12 @@
         <javaModelGenerator targetPackage="com.iwill.model" targetProject="src/main/java">
             <!-- 实体类 -->
             <property name="enableSubPackages" value="true" />
-            <property name="" value=""/>
         </javaModelGenerator>
+
+        <javaExampleGenerator targetPackage="com.iwill.example" targetProject="src/main/java">
+            <!-- example -->
+            <property name="enableSubPackages" value="true" />
+        </javaExampleGenerator>
 
         <sqlMapGenerator targetPackage="com.iwill.mapper" targetProject="src/main/resources" >
             <!-- 实体类SQL映射文件 -->

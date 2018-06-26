@@ -66,7 +66,7 @@
   <sql id="Base_Column_List">
     id, name
   </sql>
-  <select id="selectByExample" parameterType="com.iwill.model.UserDTOExample" resultMap="BaseResultMap">
+  <select id="selectByExample" parameterType="com.iwill.example.UserDTOExample" resultMap="BaseResultMap">
     select
     <if test="distinct">
       distinct
@@ -80,7 +80,7 @@
       order by ${orderByClause}
     </if>
   </select>
-  <delete id="deleteByExample" parameterType="com.iwill.model.UserDTOExample">
+  <delete id="deleteByExample" parameterType="com.iwill.example.UserDTOExample">
     delete from user
     <if test="_parameter != null">
       <include refid="Example_Where_Clause" />
@@ -109,7 +109,7 @@
       </if>
     </trim>
   </insert>
-  <select id="countByExample" parameterType="com.iwill.model.UserDTOExample" resultType="java.lang.Long">
+  <select id="countByExample" parameterType="com.iwill.example.UserDTOExample" resultType="java.lang.Long">
     select count(*) from user
     <if test="_parameter != null">
       <include refid="Example_Where_Clause" />

@@ -1,7 +1,7 @@
 package com.iwill.mapper;
 
+import com.iwill.example.UserDTOExample;
 import com.iwill.model.UserDTO;
-import com.iwill.model.UserDTOExample;
 import java.util.List;
 import org.apache.ibatis.annotations.Param;
 
